@@ -60,7 +60,7 @@ function Hero() {
     
 
   return (
-    <section className="min-h-screen w-full flex-col relative">
+    <section className="min-h-screen w-full flex-col relative" id="home">
       <div className="w-full mx-auto flex flex-col sm:mt-30 mt-20 c-space gap-3">
         <p className="sm:text-3xl text-2xl  font-medium text-white text-center font-generalsans">Hi, I am Gabriel <span className="waving-hand" >😎</span></p>
         <p className="hero_tag text-gray_gradient" >Building products and brands</p>

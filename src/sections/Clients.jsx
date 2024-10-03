@@ -2,7 +2,7 @@ import { clientReviews } from '../constants'
 
 function Clients() {
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="clients">
       <h3 className="head-text">Hear from my Clients</h3>
       <div className="client-container">
         {clientReviews.map(({
@@ -13,7 +13,7 @@ function Clients() {
           img
         }) => (
           <div key={id} className="client-review">
-            <div>
+            <div className="flex flex-col justify-between h-full ">
               <p className="text-white font-light">{review}</p>
               <div className="client-content">
                 <div className="flex gap-3">

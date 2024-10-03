@@ -19,7 +19,7 @@ function Projects() {
   const currentProject = myProjects[selectedProjectIndex]
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="projects">
       <p className="head-text">My work</p>
       <div className="grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-full" >
         <div className="flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-black-200" >
@@ -34,7 +34,7 @@ function Projects() {
             <p className="animatedText">{currentProject.desc}</p>
             <p className="animatedText">{currentProject.subdesc}</p>
           </div>
-          <div className="flex items-center justify-between flex-wrap gap-5" >
+          <div className="flex items-center justify-between flex-wrap gap-5 mt-5" >
             <div className="flex items-center gap-3">
               {currentProject.tags.map((tag, index) => (
                 <div key={index} className="tech-logo">
@@ -47,7 +47,7 @@ function Projects() {
               target="_blank"
               href={currentProject.url}
               className="flex items-center gap-2 cursor-pointer text-white-600">
-              <p>Check Live Site</p>
+              <p>Check github repo</p>
               <img src="/assets/arrow-up.png" className="w-3 h-3" alt="uparrow" />
             </a>
           </div>

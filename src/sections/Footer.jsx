@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Footer() {
   return (
@@ -10,8 +9,23 @@ function Footer() {
       </div>
       <div className="flex gap-3" >
         <div className="social-icon" >
-          <img src="/assets/github.svg" alt="github" className="w-1/2 h-1/2"/>
-          <img src="/assets/linkedin.svg" alt="linkedin" className="w-1/2 h-1/2"/>
+          <a
+            href="https://github.com/Bellota22"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src="/assets/github.svg" alt="github" className="w-full "/>
+          </a>
+        </div>
+        <div className="social-icon" >
+          <a
+            href="https://www.linkedin.com/in/gabvill/"
+            target="_blank"
+            rel="noreferrer"
+          >
+
+            <img src="/assets/linkedin.svg" alt="github" className="w-full "/>
+          </a>
         </div>
         <p className="text-white-500">
           © 2022 Gabriel Villanueva Vega All Rights Reserved

@@ -18,7 +18,7 @@ function About() {
           <div className="grid-container" >
             <img src="/assets/grid1.png" alt="grid-1" className="w-full sm:h-[276px] h-fit object-contain" />
             <div>
-              <p className="grid-headtext">Hi I am Gabriel</p>
+              <p className="grid-headtext">Hi I&apos;m Gabriel!</p>
               <p className="grid-subtext">With 3 years of experience in web development
                 and a passion for creating beautiful and functional websites, I am ready to take on your project.
               </p>
@@ -28,10 +28,10 @@ function About() {
         {/* 2do span */}
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
-            <img src="/assets/grid2.png" alt="grid-2" className="w-fuññ sm:w-[276px] h-fit object-contain" />
+            <img src="/assets/grid2.png" alt="grid-2" className="w-full sm:w-[276px] h-fit object-contain" />
             <div>
               <p className="grid-headtext">Tech Stack</p>
-              <p className="grid-subtext">I have experience with HTML, CSS, JavaScript, React, Node.js, and more.</p>
+              <p className="grid-subtext">I have experience with React, Docker, Next.js, Google Cloud Platform and more.</p>
             </div>
           
           </div>
@@ -56,7 +56,10 @@ function About() {
             <div>
               <p className="grid-headtext">I work remotly across most timezones</p>
               <p className="grid-subtext">I am based in Ilo, Peru with remote work available</p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-24" />
+              <a href="#contact" >
+                <Button name="Contact Me" isBeam containerClass="w-full mt-24" />
+
+              </a>
             </div>
           </div>
         </div>

@@ -46,14 +46,14 @@ function Contact() {
   }
 //service_cj1ogbs
   return (
-    <section className="c-space mt-20">
+    <section className="c-space mt-20" id="contact">
       <h3 className="head-text">Get in touch</h3>
       <div className="relative min-h-screen flex items-center justify-center flex-col" >
         <img src="/assets/terminal.png" alt="terminal" className="absolute inset-0 min-h-screen" />
         <div className="contact-container" >
           <h3 className="head-text">Let&apos;s talk</h3>
           <p className="text-lg text-white-600 mt-3">
-            Wheter you're looking to build a new website, improve your existing platform, or bring a unique project to life, I'm here to help.
+            Wheter you&apos;re looking to build a new website, improve your existing platform, or bring a unique project to life, I&apos;m here to help.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}
           className="mt-12 flex flex-col space-y-7">

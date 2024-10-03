@@ -8,11 +8,11 @@ import Developer from '../components/Developer'
 function Experience() {
   const [animationName, setAnimationName] = React.useState('idle')
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="work">
       <div className="w-full text-white-600">
         <h3 className="head-text">My work experience</h3>
         <div className="work-container" >
-          <div className="work-canvas" >
+          <div className="work-canvas h-[400px] sm:h-[600px]" >
             <Canvas>
               <ambientLight intensity={7} />
               <spotLight
@@ -27,8 +27,8 @@ function Experience() {
               </Suspense>
             </Canvas>
           </div>
-          <div className="work-content" >
-            <div className="sm:py-10 py-5 sm:px-5 px-2.5">
+          <div className="work-content h-[400px] sm:h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-rounded-full scrollbar-thumb-gray-600 hover:scrollbar-thumb-gray-800 scrollbar-track-transparent">
+            <div className="sm:py-10 py-5 sm:px-5 px-2.5 ">
               {
                 workExperiences.map(({id, name, pos, duration, title, icon, animation}) => (
                   <div key={id} className="work-content_container group" onClick={() => setAnimationName(animation.toLowerCase())} onPointerOver={() => setAnimationName(animation.toLowerCase())} onPointerOut={() => setAnimationName('idle')} >
