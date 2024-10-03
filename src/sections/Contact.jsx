@@ -48,8 +48,8 @@ function Contact() {
   return (
     <section className="c-space mt-20" id="contact">
       <h3 className="head-text">Get in touch</h3>
-      <div className="relative min-h-screen flex items-center justify-center flex-col" >
-        <img src="/assets/terminal.png" alt="terminal" className="absolute inset-0 min-h-screen" />
+      <div className="relative min-h-screen flex items-center justify-center flex-col py-10" >
+        <img src="/assets/terminal.png" alt="terminal" className="absolute inset-0 h-full w-[100%]" />
         <div className="contact-container" >
           <h3 className="head-text">Let&apos;s talk</h3>
           <p className="text-lg text-white-600 mt-3">
