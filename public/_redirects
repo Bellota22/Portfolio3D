@@ -1,0 +1,4 @@
+# TikTok OAuth callback bridge: TikTok redirects the browser to this public URL
+# (registered in Login Kit) and Netlify forwards it to the local TLS receiver,
+# preserving the query string (code, state). 302 keeps the hop explicit.
+/tiktok-callback https://localhost:4878/tiktok-callback 302
